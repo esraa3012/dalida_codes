@@ -1,0 +1,108 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Voltaire', sans-serif;
+    background: #2C2830;
+}
+
+.logo{
+    cursor: pointer;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 50px ;
+}
+
+form {
+    width: 680px;
+    height: 750px;
+    background: #6D6476;
+    border-radius: 25px;
+    margin: 50px auto 0;
+    padding: 70px 50px;
+    box-sizing: border-box; 
+}
+
+input {
+    width: 100%;
+    height: 55px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 1.875rem;
+    font-weight: 600;
+    border: none;
+    margin: 30px 0;
+    font-family: 'Voltaire', sans-serif;
+
+}
+
+
+
+input[type="submit"]{
+    background: #F9BA46;
+    border: none;
+    margin-top: 80px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    color: #2C2830;
+    font-family: 'Voltaire', sans-serif;
+    cursor: pointer;
+}
+
+label{
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+
+.login_form_invalid {
+    border: 1px solid #ff5466;
+    margin-bottom: 10px;
+}
+/* , .login_form_invalid_form */
+.login_form_span_invalid {
+    display: block;
+    color: #ff5466;
+    font-family: 'Voltaire', sans-serif;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* .login_form_invalid_form {
+    margin-bottom: 20px;
+    margin-top: -20px;
+} */
+
+@media screen and (max-width: 500px){
+  body{
+    width: 100%;
+  }
+  .logo{
+    margin-left: 15px;
+    margin-bottom: 40px;
+    height: 50%;
+    width: 30%;
+}
+  form{
+    width: 90%;
+    height: 90%;
+    padding: 70px 20px;
+    margin-bottom: 40px;
+}
+label{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+input[type="button"]{
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+}

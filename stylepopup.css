@@ -1,0 +1,112 @@
+#popup_fond {
+    background: rgba(40, 44, 53, 0.8);
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+#popup_center {
+    background-color: transparent;
+    width: 50%;
+    height: 75%;
+    max-width: 492px;
+    max-height: 340px;
+    color: white;
+}
+
+#popup_close {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    margin: .5rem .5rem 0 0;
+}
+
+#popup_close_icon {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#popup_close_icon:hover {
+    background: rgba(236, 154, 58, 0.3);
+}
+
+#popup_mail {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+#popup_mail_icon {
+    width: 5.9375rem;
+}
+
+#popup_text,
+#popup_title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Voltaire', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: unset;
+    margin: 0;
+}
+
+#popup_text {
+    margin: 1.6875rem 0 1.75rem;
+}
+
+#popup_title {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 1.4375rem;
+}
+
+input#popup_thanks,
+input#popup_thanks_no {
+    border: 0;
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: .875rem;
+    display: inline-block;
+    /* color: white; */
+    text-shadow: 0rem 0rem .125rem rgb(0 0 0 / 50%);
+    /* background-color: blue; */
+    background: #F3C434;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+input#popup_thanks,
+input#popup_thanks_no {
+    width: 6rem;
+    cursor: pointer;
+}
+
+input#popup_thanks:hover,
+input#popup_thanks_no:hover {
+    background: #EC9A3A;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+@media screen and (max-width: 500px) {
+    #popup_center {
+        width: 90%;
+        height: 90%;
+    }
+}
